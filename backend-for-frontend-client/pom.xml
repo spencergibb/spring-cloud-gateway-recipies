@@ -15,8 +15,8 @@
 	<description>Spring Cloud Gateway Backend for Frontend</description>
 	<properties>
 		<java.version>11</java.version>
-		<spring-cloud.version>2021.0.2-SNAPSHOT</spring-cloud.version>
-		<!--<spring-cloud.version>2021.0.1</spring-cloud.version>-->
+		<!--<spring-cloud.version>2021.0.2-SNAPSHOT</spring-cloud.version>-->
+		<spring-cloud.version>2021.0.1</spring-cloud.version>
 	</properties>
 	<dependencies>
 		<dependency>
