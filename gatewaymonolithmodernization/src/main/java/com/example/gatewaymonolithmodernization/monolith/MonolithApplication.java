@@ -1,4 +1,4 @@
-package com.example.gatewaymonolithmodernization;
+package com.example.gatewaymonolithmodernization.monolith;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
