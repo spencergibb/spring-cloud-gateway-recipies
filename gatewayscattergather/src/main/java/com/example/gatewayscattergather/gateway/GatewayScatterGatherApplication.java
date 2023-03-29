@@ -13,13 +13,12 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.util.MimeType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
-public class GatewayApplication {
+public class GatewayScatterGatherApplication {
 
 	@GetMapping(path = "/scattergather")
 	Mono<ResponseEntity<List<String>>> scatterGather(ProxyExchange<String> proxy) {
@@ -43,7 +42,7 @@ public class GatewayApplication {
 	}
 
 	public static void main(String[] args) {
-		new SpringApplicationBuilder(GatewayApplication.class).properties("spring.profiles.active=gateway").run(args);
+		new SpringApplicationBuilder(GatewayScatterGatherApplication.class).properties("spring.profiles.active=gateway").run(args);
 	}
 
 }

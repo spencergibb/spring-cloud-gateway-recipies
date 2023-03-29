@@ -33,8 +33,8 @@ public class GatewayredisratelimitingApplication {
 
 	public static void main(String[] args) {
 		 new SpringApplicationBuilder(GatewayredisratelimitingApplication.class)
-				 .properties("spring.redis.host=" + redis.getContainerIpAddress())
-				 .properties("spring.redis.port=" + redis.getFirstMappedPort())
+				 .properties("spring.data.redis.host=" + redis.getContainerIpAddress())
+				 .properties("spring.data.redis.port=" + redis.getFirstMappedPort())
 				 .run(args);
 	}
 
