@@ -19,7 +19,7 @@ public class MonolithApplication {
 		@GetMapping("/")
 		String home(Model model) {
 			model.addAttribute("hello", "Hello Monolith UI");
-			return "index";
+			return "monolith";
 		}
 
 	}
